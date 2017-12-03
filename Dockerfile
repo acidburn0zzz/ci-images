@@ -12,7 +12,7 @@ RUN apt build-dep --yes python2.7 && apt build-dep --yes python3.5
 
 # Installing tox should give us everything else we need.  Do we need a newer
 # version of tox?
-RUN apt install --yes git python-tox
+RUN apt install --yes git python-tox wget
 
 # Add a new user
 RUN useradd runner --create-home
@@ -32,7 +32,7 @@ RUN export LC_ALL=C.UTF-8 && export LANG=C.UTF-8
 
 # Install Python 3.7 from git head.
 WORKDIR /tmp/
-RUN git clone git@github.com:python/cpython.git
+RUN git clone https://github.com/python/cpython.git
 WORKDIR /tmp/cpython
 RUN ./configure && make && make altinstall
 
