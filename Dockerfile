@@ -12,7 +12,10 @@ RUN apt build-dep --yes python2.7 && apt build-dep --yes python3.5
 
 # Installing tox should give us everything else we need.  Do we need a newer
 # version of tox?
-RUN apt install --yes git python-tox wget
+RUN apt install --yes git python-tox python3-pip wget curl
+
+# For the qa test.
+RUN pip3 install mypy
 
 # Add a new user
 RUN useradd runner --create-home
