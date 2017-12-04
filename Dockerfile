@@ -16,6 +16,8 @@ RUN apt install --yes git python-tox python3-pip wget curl
 
 # For the qa test.
 RUN pip3 install mypy
+# For codecov.io
+RUN pip3 install codecov
 
 # Add a new user
 RUN useradd runner --create-home
