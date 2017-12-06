@@ -6,4 +6,4 @@ built from this image.  For more information on using the GitLab container
 registry with shared runners, see [this][1] documentation.
 
 
-[1] https://gitlab.com/help/user/project/container_registry
+[1]: https://gitlab.com/help/user/project/container_registry
