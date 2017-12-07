@@ -34,3 +34,5 @@ shared runner), use this URL to refer to the image:
 ```
 quay.io/python-devs/ci-image
 ```
+
+Here's [an example](https://gitlab.com/python-devs/importlib_resources/blob/master/.gitlab-ci.yml).
