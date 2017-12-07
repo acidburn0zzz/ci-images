@@ -27,7 +27,7 @@ RUN useradd runner --create-home && \
 # Update Xenial and install the build-deps
 RUN apt update && \
     apt build-dep -y python2.7 && apt build-dep -y python3.5 && \
-    apt install -y python3-pip wget unzip && \
+    apt install -y python3-pip wget unzip git && \
     # Remove apt's lists to make the image smaller.
     rm -rf /var/lib/apt/lists/*  && \
     # get and install all versions of Python.
