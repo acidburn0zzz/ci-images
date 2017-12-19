@@ -11,7 +11,7 @@ ADD get-pythons.sh /usr/local/bin/get-pythons.sh
 # Change these variables to update the version of Python installed.
 ENV PYTHON_34_VER=3.4.7 \
     PYTHON_35_VER=3.5.4 \
-    PYTHON_36_VER=3.6.3 \
+    PYTHON_36_VER=3.6.4 \
     PYTHON_27_VER=2.7.13 \
     # Set debian front-end to non-interactive so that apt doesn't ask for
     # prompts later.
