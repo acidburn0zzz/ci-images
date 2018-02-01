@@ -10,8 +10,9 @@ cleanup_after_install () {
 
 get_install () {
     PY_VERSION=$1
+    PY_DIR=${2:-$1}
     cd /tmp
-    wget https://www.python.org/ftp/python/$PY_VERSION/Python-$PY_VERSION.tgz
+    wget https://www.python.org/ftp/python/$PY_DIR/Python-$PY_VERSION.tgz
     tar xzf Python-$PY_VERSION.tgz
     cd /tmp/Python-$PY_VERSION
     ./configure && make && make altinstall
@@ -34,7 +35,7 @@ get_install $PYTHON_27_VER
 get_install $PYTHON_34_VER
 get_install $PYTHON_35_VER
 get_install $PYTHON_36_VER
-get_install $PYTHON_37_VER
+get_install $PYTHON_37_VER 3.7.0
 
 # After we have installed all the things, we cleanup tests and unused files
 # like .pyc and .pyo
