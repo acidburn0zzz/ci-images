@@ -7,11 +7,11 @@ releases of Python, as well as a semi-up-to-date checkout of the Python
 The versions of Python currently supported include:
 
 * Python 3.8 git head
-* [Python 3.7.0b4](https://www.python.org/downloads/release/python-370b4/)
-* [Python 3.6.4](https://www.python.org/downloads/release/python-364/)
+* [Python 3.7.0rc1](https://www.python.org/downloads/release/python-370rc1/)
+* [Python 3.6.5](https://www.python.org/downloads/release/python-365/)
 * [Python 3.5.5](https://www.python.org/downloads/release/python-355/)
 * [Python 3.4.8](https://www.python.org/downloads/release/python-348/)
-* [Python 2.7.14](https://www.python.org/downloads/release/python-2714/)
+* [Python 2.7.15](https://www.python.org/downloads/release/python-2715/)
 
 We'll track new maintenance releases of these Python versions, and will
 include Python 3.7 beta releases when they become available.  Feel free to

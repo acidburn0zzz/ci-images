@@ -10,7 +10,10 @@ ADD get-pythons.sh /usr/local/bin/get-pythons.sh
 
 # Change these variables to update the version of Python installed.
 #
-# @@@@@ Update the README.md!
+# @@@@@
+# Update the README.md!
+# @@@@@
+
 ENV PYTHON_27_VER=2.7.15 \
     PYTHON_34_VER=3.4.8 \
     PYTHON_35_VER=3.5.5 \
