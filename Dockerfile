@@ -32,10 +32,11 @@ RUN useradd runner --create-home && \
 
 # Use a new layer here so that these static changes are cached from above
 # layer.  Update Xenial and install the build-deps.
-RUN apt -qq update && \
+RUN apt -qq -o=Dpkg::Use-Pty=0 update && \
     # Use python3.6 build-deps for Ubuntu 18.04.
-    apt -qq build-dep -y python2.7 && apt -qq build-dep -y python3.6 && \
-    apt -qq install -y python3-pip wget unzip git && \
+    apt -qq -o=Dpkg::Use-Pty=0 build-dep -y python2.7 && \
+    apt -qq -o=Dpkg::Use-Pty=0 build-dep -y python3.6 && \
+    apt -qq -o=Dpkg::Use-Pty=0 install -y python3-pip wget unzip git && \
     # Remove apt's lists to make the image smaller.
     rm -rf /var/lib/apt/lists/*  && \
     # Get and install all versions of Python.
