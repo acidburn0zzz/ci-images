@@ -35,7 +35,7 @@ RUN useradd runner --create-home && \
 RUN apt -q update && \
     # We have to use python3.5 build-deps for Ubuntu 16.04.  We can update
     # this to 3.6 or 3.7 depending on what gets released in 18.04.
-    apt -q build-dep -y python2.7 && apt build-dep -y python3.5 && \
+    apt -q build-dep -y python2.7 && apt -q build-dep -y python3.5 && \
     apt -q install -y python3-pip wget unzip git && \
     # Remove apt's lists to make the image smaller.
     rm -rf /var/lib/apt/lists/*  && \
