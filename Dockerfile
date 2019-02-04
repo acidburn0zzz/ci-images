@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 MAINTAINER Barry Warsaw <barry@python.org>
 
 # Enable source repositories so we can use `apt build-dep` to get all the
@@ -32,11 +32,10 @@ RUN useradd runner --create-home && \
 
 # Use a new layer here so that these static changes are cached from above
 # layer.  Update Xenial and install the build-deps.
-RUN apt -q update && \
-    # We have to use python3.5 build-deps for Ubuntu 16.04.  We can update
-    # this to 3.6 or 3.7 depending on what gets released in 18.04.
-    apt -q build-dep -y python2.7 && apt -q build-dep -y python3.5 && \
-    apt -q install -y python3-pip wget unzip git && \
+RUN apt -qq update && \
+    # Use python3.6 build-deps for Ubuntu 18.04.
+    apt -qq build-dep -y python2.7 && apt -qq build-dep -y python3.6 && \
+    apt -qq install -y python3-pip wget unzip git && \
     # Remove apt's lists to make the image smaller.
     rm -rf /var/lib/apt/lists/*  && \
     # Get and install all versions of Python.
