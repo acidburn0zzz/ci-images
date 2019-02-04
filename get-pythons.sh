@@ -12,7 +12,7 @@ get_install () {
     PY_VERSION=$1
     PY_DIR=${2:-$1}
     cd /tmp
-    wget https://www.python.org/ftp/python/$PY_DIR/Python-$PY_VERSION.tgz
+    wget -q https://www.python.org/ftp/python/$PY_DIR/Python-$PY_VERSION.tgz
     tar xzf Python-$PY_VERSION.tgz
     cd /tmp/Python-$PY_VERSION
     ./configure && make && make altinstall
