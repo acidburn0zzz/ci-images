@@ -24,7 +24,7 @@ get_install () {
 # First, get and install Python rolling devel from the latest git install.
 cd  /tmp/
 wget -q https://github.com/python/cpython/archive/master.zip
-unzip master.zip
+unzip -qq master.zip
 cd /tmp/cpython-master
 ./configure && make && make altinstall
 # Remove the git clone.
