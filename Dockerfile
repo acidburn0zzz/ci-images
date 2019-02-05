@@ -44,7 +44,8 @@ RUN apt -qq -o=Dpkg::Use-Pty=0 update && \
     # Install some other useful tools for test environments.
     pip3 install mypy \
                  codecov \
-                 tox
+                 tox \
+    > /dev/null
 
 # Switch to runner user and set the workdir.
 USER runner
