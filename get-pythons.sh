@@ -27,7 +27,7 @@ get_install () {
 #get_install $PYTHON_35_VER
 #get_install $PYTHON_36_VER
 #get_install $PYTHON_37_VER
-get_install $PYTHON_38_VER
+#get_install $PYTHON_38_VER
 
 # Get and install Python rolling devel from the latest git install.
 #cd  /tmp/
