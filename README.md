@@ -21,8 +21,16 @@ requests](https://gitlab.com/python-devs/ci-images/merge_requests) or
 
 We are publishing the Docker images on [Quay](https://quay.io). Changes to
 this repository automatically trigger new builds so the Quay images are [always
-up to date](https://quay.io/repository/python-devs/ci-image?tab=info).  You
-can pull the resulting containers with this command:
+up to date](https://quay.io/repository/python-devs/ci-image?tab=info).
+
+You can use this image to test something in the latest version of Python,
+e.g.:
+
+```
+$ docker run quay.io/python-devs/ci-image python3.8 -c "import sys; print(sys.version)"
+```
+
+You can pull the resulting containers with this command:
 
 ```
 $ docker pull quay.io/python-devs/ci-image
