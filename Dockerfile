@@ -19,7 +19,7 @@ ENV PYTHON_27_VER=2.7.15 \
     PYTHON_35_VER=3.5.6 \
     PYTHON_36_VER=3.6.8 \
     PYTHON_37_VER=3.7.2 \
-    PYTHON_38_VER=3.8.0a1 \
+    PYTHON_38_VER=3.8.0a2 \
     # Set Debian front-end to non-interactive so that apt doesn't ask for
     # prompts later.
     DEBIAN_FRONTEND=noninteractive
