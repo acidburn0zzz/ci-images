@@ -8,12 +8,12 @@ releases of Python, as well as a semi-up-to-date checkout of the Python
 The versions of Python currently supported include:
 
 * Python 3.8 git head
-* [Python 3.8.0a2](https://www.python.org/downloads/release/python-380a2/)
-* [Python 3.7.2](https://www.python.org/downloads/release/python-372/)
+* [Python 3.8.0a3](https://www.python.org/downloads/release/python-380a3/)
+* [Python 3.7.3](https://www.python.org/downloads/release/python-373/)
 * [Python 3.6.8](https://www.python.org/downloads/release/python-368/)
-* [Python 3.5.6](https://www.python.org/downloads/release/python-356/)
-* [Python 3.4.9](https://www.python.org/downloads/release/python-349/)
-* [Python 2.7.15](https://www.python.org/downloads/release/python-2715/)
+* [Python 3.5.7](https://www.python.org/downloads/release/python-357/)
+* [Python 3.4.10](https://www.python.org/downloads/release/python-3410/)
+* [Python 2.7.16](https://www.python.org/downloads/release/python-2716/)
 
 Feel free to help us by submitting [merge
 requests](https://gitlab.com/python-devs/ci-images/merge_requests) or
