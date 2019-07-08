@@ -8,7 +8,7 @@ releases of Python, as well as a semi-up-to-date checkout of the Python
 The versions of Python currently supported include:
 
 * Python 3.9 git head
-* [Python 3.8.0b1](https://www.python.org/downloads/release/python-380b1/)
+* [Python 3.8.0b2](https://www.python.org/downloads/release/python-380b2/)
 * [Python 3.7.3](https://www.python.org/downloads/release/python-373/)
 * [Python 3.6.8](https://www.python.org/downloads/release/python-368/)
 * [Python 3.5.7](https://www.python.org/downloads/release/python-357/)
@@ -27,13 +27,13 @@ You can use this image to test something in the latest version of Python,
 e.g.:
 
 ```
-$ docker run quay.io/python-devs/ci-image python3.8 -c "import sys; print(sys.version)"
+$ docker run quay.io/python-devs/ci-image:master python3.8 -c "import sys; print(sys.version)"
 ```
 
 You can pull the resulting containers with this command:
 
 ```
-$ docker pull quay.io/python-devs/ci-image
+$ docker pull quay.io/python-devs/ci-image:master
 ```
 
 If you want to use this image in your own CI pipelines (e.g. a
