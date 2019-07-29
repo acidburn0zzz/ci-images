@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 MAINTAINER Barry Warsaw <barry@python.org>
 
 # Enable source repositories so we can use `apt build-dep` to get all the
-# build dependencies for Python 2.7 and 3.5.
+# build dependencies for Python 2.7 and 3.5+.
 RUN sed -i -- 's/#deb-src/deb-src/g' /etc/apt/sources.list && \
     sed -i -- 's/# deb-src/deb-src/g' /etc/apt/sources.list
 
@@ -19,7 +19,7 @@ ENV PYTHON_27_VER=2.7.16 \
     PYTHON_35_VER=3.5.7 \
     PYTHON_36_VER=3.6.9 \
     PYTHON_37_VER=3.7.4 \
-    PYTHON_38_VER=3.8.0b2 \
+    PYTHON_38_VER=3.8.0b3 \
     # Set Debian front-end to non-interactive so that apt doesn't ask for
     # prompts later.
     DEBIAN_FRONTEND=noninteractive

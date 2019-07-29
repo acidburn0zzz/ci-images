@@ -8,7 +8,7 @@ releases of Python, as well as a semi-up-to-date checkout of the Python
 The versions of Python currently supported include:
 
 * Python 3.9 git head
-* [Python 3.8.0b2](https://www.python.org/downloads/release/python-380b2/)
+* [Python 3.8.0b3](https://www.python.org/downloads/release/python-380b3/)
 * [Python 3.7.4](https://www.python.org/downloads/release/python-374/)
 * [Python 3.6.9](https://www.python.org/downloads/release/python-369/)
 * [Python 3.5.7](https://www.python.org/downloads/release/python-357/)
@@ -41,7 +41,7 @@ If you want to use this image in your own CI pipelines (e.g. a
 shared runner), use this URL to refer to the image:
 
 ```
-quay.io/python-devs/ci-image
+quay.io/python-devs/ci-image:master
 ```
 
 Here's [an example](https://gitlab.com/python-devs/importlib_resources/blob/master/.gitlab-ci.yml).
