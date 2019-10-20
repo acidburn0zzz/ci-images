@@ -14,7 +14,7 @@ ADD get-pythons.sh /usr/local/bin/get-pythons.sh
 # Update the README.md!
 # @@@@@
 
-ENV PYTHON_27_VER=2.7.16 \
+ENV PYTHON_27_VER=2.7.17 \
     PYTHON_34_VER=3.4.10 \
     PYTHON_35_VER=3.5.7 \
     PYTHON_36_VER=3.6.9 \

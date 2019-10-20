@@ -13,7 +13,7 @@ The versions of Python currently supported include:
 * [Python 3.6.9](https://www.python.org/downloads/release/python-369/)
 * [Python 3.5.7](https://www.python.org/downloads/release/python-357/)
 * [Python 3.4.10](https://www.python.org/downloads/release/python-3410/)
-* [Python 2.7.16](https://www.python.org/downloads/release/python-2716/)
+* [Python 2.7.17](https://www.python.org/downloads/release/python-2717/)
 
 Feel free to help us by submitting [merge
 requests](https://gitlab.com/python-devs/ci-images/merge_requests) or
