@@ -27,7 +27,8 @@ get_install $PYTHON_34_VER
 get_install $PYTHON_35_VER
 get_install $PYTHON_36_VER
 get_install $PYTHON_37_VER
-get_install $PYTHON_38_VER 3.9.0a1
+get_install $PYTHON_38_VER
+get_install $PYTHON_39_VER 3.9.0a1
 
 # Get and install Python rolling devel from the latest git install.
 cd  /tmp/
