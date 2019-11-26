@@ -22,13 +22,17 @@ get_install () {
 
 
 # Install Python 2.7, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9
+#
+# For pre-release versions, include a second argument that's *just*
+# Major.Minor.Patch (i.e. without the pre-release tag) since when they don't
+# match, the second argument is the download directory.
 get_install $PYTHON_27_VER
 get_install $PYTHON_34_VER
 get_install $PYTHON_35_VER
 get_install $PYTHON_36_VER
 get_install $PYTHON_37_VER
 get_install $PYTHON_38_VER
-get_install $PYTHON_39_VER 3.9.0a1
+get_install $PYTHON_39_VER 3.9.0
 
 # Get and install Python rolling devel from the latest git install.
 cd  /tmp/
