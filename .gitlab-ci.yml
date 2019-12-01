@@ -12,7 +12,7 @@ variables:
 build:
   stage: build
   script:
-    - docker login -u  python-devs+gitlabci -p $CI_JOB_TOKEN quay.io
+    - docker login -u="python-devs+gitlabci" -p="$CI_JOB_TOKEN" quay.io
     - docker build --pull -t $RELEASE_IMAGE .
     - docker push $RELEASE_IMAGE
     - docker tag $RELEASE_IMAGE $LATEST_IMAGE
