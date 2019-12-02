@@ -7,7 +7,7 @@ stages:
 
 variables:
   RELEASE_IMAGE: quay.io/python-devs/ci-image:master
-  LATEST_IAMGE: quay.io/python-devs/ci-image:latest
+  LATEST_IMAGE: quay.io/python-devs/ci-image:latest
 
 build:
   stage: build
