@@ -44,7 +44,7 @@ RUN apt -qq -o=Dpkg::Use-Pty=0 update && \
     # Remove apt's lists to make the image smaller.
     rm -rf /var/lib/apt/lists/*
 # Get and install all versions of Python.
-RUN ./usr/local/bin/get-pythons.sh
+RUN ./usr/local/bin/get-pythons.sh > /dev/null
     # Install some other useful tools for test environments.
 RUN pip3 install mypy codecov tox
 
