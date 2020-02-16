@@ -46,7 +46,10 @@ RUN apt -qq -o=Dpkg::Use-Pty=0 update && \
 # Get and install all versions of Python.
 RUN ./usr/local/bin/get-pythons.sh > /dev/null
     # Install some other useful tools for test environments.
-RUN pip3 install mypy codecov tox
+    # Require a newer version of six until an issue with
+    # pip dependency resolution when required package versions conflict is resolved.
+    # See: https://github.com/pypa/virtualenv/issues/1551 for context.
+RUN pip3 install mypy codecov tox "six>=1.14.0"
 
 # Switch to runner user and set the workdir.
 USER runner
