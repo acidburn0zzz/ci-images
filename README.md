@@ -9,7 +9,7 @@ The versions of Python currently supported include:
 
 * Python 3.9 git head
 * [Python 3.9.0a6](https://www.python.org/downloads/release/python-390a6/)
-* [Python 3.8.2](https://www.python.org/downloads/release/python-382/)
+* [Python 3.8.3](https://www.python.org/downloads/release/python-383/)
 * [Python 3.7.7](https://www.python.org/downloads/release/python-377/)
 * [Python 3.6.10](https://www.python.org/downloads/release/python-3610/)
 * [Python 3.5.7](https://www.python.org/downloads/release/python-357/)
