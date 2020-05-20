@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 MAINTAINER Barry Warsaw <barry@python.org>
 
 # Enable source repositories so we can use `apt build-dep` to get all the
