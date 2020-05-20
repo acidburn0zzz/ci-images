@@ -3,7 +3,7 @@
 This is an official Docker image containing builds of the latest stable
 releases of Python, as well as a semi-up-to-date checkout of the Python
 [git master branch](https://github.com/python/cpython).  It is based on
-[Ubuntu 18.04 LTS](http://releases.ubuntu.com/18.04/).
+[Ubuntu 20.04 LTS](http://releases.ubuntu.com/20.04/).
 
 The versions of Python currently supported include:
 
