@@ -37,9 +37,8 @@ RUN useradd runner --create-home && \
 # layer.  Update Xenial and install the build-deps.
 RUN apt -qq -o=Dpkg::Use-Pty=0 update && \
     apt -qq -o=Dpkg::Use-Pty=0 -y dist-upgrade && \
-    # Use python3.6 build-deps for Ubuntu 18.04.
-    apt -qq -o=Dpkg::Use-Pty=0 build-dep -y python2.7 && \
-    apt -qq -o=Dpkg::Use-Pty=0 build-dep -y python3.6 && \
+    # Use python3.8 build-deps for Ubuntu 20.04
+    apt -qq -o=Dpkg::Use-Pty=0 build-dep -y python3.8 && \
     apt -qq -o=Dpkg::Use-Pty=0 install -y python3-pip wget unzip git && \
     # Remove apt's lists to make the image smaller.
     rm -rf /var/lib/apt/lists/*
