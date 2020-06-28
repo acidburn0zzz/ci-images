@@ -10,8 +10,8 @@ The versions of Python currently supported include:
 * Python 3.10 git head
 * [Python 3.9.0b3](https://www.python.org/downloads/release/python-390b3/)
 * [Python 3.8.3](https://www.python.org/downloads/release/python-383/)
-* [Python 3.7.7](https://www.python.org/downloads/release/python-377/)
-* [Python 3.6.10](https://www.python.org/downloads/release/python-3610/)
+* [Python 3.7.8](https://www.python.org/downloads/release/python-378/)
+* [Python 3.6.11](https://www.python.org/downloads/release/python-3611/)
 * [Python 3.5.7](https://www.python.org/downloads/release/python-357/)
 * [Python 3.4.10](https://www.python.org/downloads/release/python-3410/)
 * [Python 2.7.17](https://www.python.org/downloads/release/python-2717/)
